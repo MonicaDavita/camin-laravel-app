@@ -14,9 +14,21 @@ List fitur pada aplikasi ini adalah sebagai berikut.
 7. Rating fasilitas dan pelayanan (opsional)
 
 ## Tampilan Aplikasi
-(screenshot fitur aplikasi)
-### Fitur 1: ...
-(screenshot fitur 1)
-### Fitur 2: ...
-(screenshot fitur 2)
-### Dst
+### Fitur 1: Tampilan awal / dashboard website
+![dashboard](https://github.com/MonicaDavita/camin-laravel-app/blob/main/images/1.png)
+### Fitur 2: Register
+![register](https://github.com/MonicaDavita/camin-laravel-app/blob/main/images/2.png)
+### Fitur 3: Fasilitas-fasilitas
+![fasilitas](https://github.com/MonicaDavita/camin-laravel-app/blob/main/images/3.png)
+### Fitur 4: Fasilitas Departemen
+![departemen](https://github.com/MonicaDavita/camin-laravel-app/blob/main/images/4.png)
+### Fitur 5: Deskripsi dan aksi selanjutnya
+![deskripsi](https://github.com/MonicaDavita/camin-laravel-app/blob/main/images/5.png)
+### Fitur 6: Kalender
+![kalender](https://github.com/MonicaDavita/camin-laravel-app/blob/main/images/6.png)
+### Fitur 7: Booking
+![booking](https://github.com/MonicaDavita/camin-laravel-app/blob/main/images/7.png)
+### Fitur 8: Pemesanan berhasil
+![berhasil](https://github.com/MonicaDavita/camin-laravel-app/blob/main/images/8.png)
+### Fitur 9: Pemesanan gagal
+![gagal](https://github.com/MonicaDavita/camin-laravel-app/blob/main/images/9.png)
