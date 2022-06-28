@@ -1,0 +1,14 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+$tertiary: #218f88;
+
+// Add "tertiary" styles to the generated classes
+$theme-colors: (
+  "tertiary": $tertiary,
+);
