@@ -20,4 +20,3 @@ List fitur pada aplikasi ini adalah sebagai berikut.
 ### Fitur 2: ...
 (screenshot fitur 2)
 ### Dst
-# images
