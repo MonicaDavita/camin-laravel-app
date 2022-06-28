@@ -1,0 +1,41 @@
+version: "3.8"
+
+networks:
+  nginx-proxy-network:
+    external: true
+
+services:
+  app:
+    container_name: pbkk-app
+    image: mirzaq19/temanhewan-api
+    volumes: 
+      - ./src/:/var/www/html
+    environment:
+      - VIRTUAL_HOST=${VIRTUAL_HOST}
+      - VIRTUAL_PORT=${VIRTUAL_PORT}
+      - DEFAULT_HOST=${VIRTUAL_PORT}
+      - SELF_SIGNED_HOST=${SELF_SIGNED_HOST}
+    dns:
+      - 1.1.1.1
+      - 1.0.0.1
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - nginx-proxy-network
+
+  mysql:
+    container_name: pbkk-mysql
+    image: mysql
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "4306:3306"
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=db_myitsbooking
+      - MYSQL_USER=myitsbooking
+      - MYSQL_PASSWORD=myitsbooking
+    networks:
+      - nginx-proxy-network
